@@ -57,6 +57,20 @@ This is a simple Node.js-based HTTP server that simulates a standard deck of 52 
 
 Ensure you have Node.js installed on your system.
 
+### Installing Node.js
+
+If Node.js is not already installed, follow these steps:
+
+**Download Node.js**: Visit the official website [here](https://nodejs.org/)
+
+**Install Node.js**: Choose the LTS (Long-Term Support) version and follow the installation instructions for your operating system.
+
+**Verify Installation**: Open a terminal or command prompt and run:
+
+node -v
+
+If installed correctly, this will display the Node.js version.
+
 ## Installation
 
 Clone the repository or copy the source code to your local machine.
