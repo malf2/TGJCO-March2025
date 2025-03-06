@@ -92,7 +92,7 @@ Navigate to the directory containing the script.
 
 Run the following command to start the server:
 
-node CardDeckSim.js
+node DeckOfCards.js
 
 ## Usage
 
