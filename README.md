@@ -39,8 +39,21 @@ Push (Draw) if both totals are equal.
 
 Player loses immediately if they go over 21 (bust), without the dealer having to play.
 
+NOTE: all face cards(J,Q,K) are worth 10 and Aces are worth 1 OR 11 depending on what is most adventurous
+
 ## Additional Features (Bonus Points)
 
+Features should be implemented in order and must be compatible with all previous features.
+
+- **Support 1-5 players**: Upon starting, prompt the user to enter the number of players (1 to 5). Allow each player to input a name (up to 12 characters). Each player's score should be clearly displayed during their turn.
+- **Multiple rounds with one deck**: After player setup, allow the user to select a number of rounds before shuffling the deck. The maximum number of rounds should be set based on the number of players to ensure there are enough cards.
+- **Dealer hits on 'soft' 17**: The dealer should now hit on a total of 17 if one of their cards is an Ace (soft 17).
+- **Blackjack auto-win**: If a player gets a Blackjack (an Ace and a face card, but not a 10), they should automatically win—unless the dealer also has a Blackjack, in which case it results in a push.
+- **Support betting**: Each player starts with £100. At the beginning of each round, players can place a bet (any whole number up to their current balance). If they win against the dealer, they receive double their bet. If they lose or go bust, they forfeit the bet.
+- **Advanced betting**: Blackjack now pays out at 3:2. Players have the option to 'double' their original bet but can only take one more card.
+- **Split betting**: If a player is dealt a pair, they can choose to 'split' their hand and play two separate hands.
+- **Card Counting Assistant**: Display a simplified count for the player (e.g., Hi-Lo system) and notify them when the deck is favorable.
+- **AI Opponents**: Introduce computer-controlled players with different playstyles. At the start of the game, allow players to add AI opponents (with a total limit of 5 players). Support at least two distinct AI playstyles.
 
 
 # Card Deck Simulator
