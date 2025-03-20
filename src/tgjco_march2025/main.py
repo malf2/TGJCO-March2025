@@ -1,6 +1,7 @@
 import requests
 from rich import print
 
+
 class Player:
     def __init__(self, name, hand):
         self.name = name
@@ -42,6 +43,7 @@ class Player:
         elif choice == "S":
             return None
 
+
 class Dealer(Player):
     def choice(self):
         if self.highest_score < 17: return get_card()
@@ -53,8 +55,10 @@ def get_hand():
         hand.append(get_card())
     return hand
 
+
 def get_card() -> str:
     return requests.get("http://localhost:9090/get-card").json()["card"]
+
 
 def shuffle() -> bool:
     return requests.get("http://localhost:9090/shuffle").ok
@@ -62,6 +66,7 @@ def shuffle() -> bool:
 
 def print_scores(player: Player):
     print(f"{player.name} current score: {player.scores}")
+
 
 def main() -> None:
     shuffle()
@@ -108,10 +113,5 @@ def main() -> None:
         print("dealer wins, player stood while dealer had higher score")
 
 
-
-
-
-
 if __name__ == "__main__":
     main()
-

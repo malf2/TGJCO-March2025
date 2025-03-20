@@ -15,14 +15,10 @@ If not, you can install python 3.13 manually, or with uv:
 
 - https://docs.astral.sh/uv/getting-started/installation/
 
-
 With uv installed and added to your path:
 
 ```bash
-uv venv --python 3.13 .venv
-. .venv/Scripts/activate # windows
-. .venv/bin/activate # bash
-uv run --script src/tgjco_march2025/main.py --with requests --with rich
+uv run --script https://gist.githubusercontent.com/tferns-ch/f05f178de596fc0ab5cdba7aa5c269c9/raw/7b6b6d50bc331d14cb813eb83d01d2be2f4b06a1/test.py
 ```
 
 #### Running the code
