@@ -71,7 +71,7 @@ def main() -> None:
     print(f"Player starting hand is {player.hand}")
     print(f"Dealer starting hand is {dealer.hand}")
 
-    while not player.bust or dealer.bust:
+    while not (player.bust or dealer.bust):
         print_scores(player)
         print_scores(dealer)
         p_choice = player.choice()
@@ -88,7 +88,7 @@ def main() -> None:
         else:
             print(f"Dealer stuck on {dealer.scores}")
 
-        if not p_choice or d_choice:
+        if not (p_choice or d_choice):
             break
 
     print_scores(player)
